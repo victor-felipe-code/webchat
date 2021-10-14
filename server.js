@@ -1,6 +1,7 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const socketServer = require('socket.io');
+const helmet = require('helmet');
 require('dotenv').config();
 
 const path = require('path');
@@ -11,7 +12,7 @@ const http = require('http').createServer(app);
 const allowCors = require('./config/cors');
 
 const PORT = process.env.PORT || 3000;
-
+app.use(helmet());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(allowCors);
