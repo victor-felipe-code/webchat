@@ -27,7 +27,7 @@ app.use(homeWebChat);
 
 const io = socketServer(http, {
   cors: {
-    origin: 'https://my-webchat-socketio.herokuapp.com/',
+    origin: process.env.URL_API,
     methods: ['GET', 'POST'],
     credentials: true,
   },
