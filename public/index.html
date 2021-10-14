@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>Web Chat</title>
+</head>
+<body>
+  <header>
+      <input data-testid="nickname-box" id="setMyName" class="set-nick-name" placeholder="Seu nome" type="text"/>
+      <button data-testid="nickname-button" id="saveMyName" class="save-nick-name" type="button">Salvar</button>
+  </header>
+  <main class="container">
+    <aside class="users-oline">
+      <div>
+        <h6>Usúarios online no chat.</h6>
+      </div>
+      <ul id="online-user-nickname-group" class="list-users">
+      </ul>
+    </aside>
+    <section class="content">
+      <div id="container-web-chat" class="container-chat">
+      </div>
+      <div class="set-message">
+        <input data-testid="message-box" id="text-message" name="message" class="input-message" />
+        <button data-testid="send-button" id="send-message-chat" class="send-message" type="button">Enviar</button>
+      </div>
+    </section>
+  </main>
+</body>
+<script type="module" src="js/chat.js"></script>
+</html>

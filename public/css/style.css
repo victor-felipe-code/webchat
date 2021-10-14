@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: auto;
+  background-color: rgb(3, 27, 24);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  align-items: center;
+  background-color: rgb(5, 5, 5);
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  width: 100%;
+}
+
+.set-nick-name {
+  height: 30px;
+  width: 40%;
+}
+
+.set-nick-name:focus {
+  outline: none;
+}
+
+.save-nick-name {
+  height: 25px;
+  width: 55px;
+}
+
+.container {
+  color: white;
+  display: flex;
+  height: 595px;
+  justify-content: space-between;
+  width: 375px;
+}
+
+.users-online {
+  width: 25%;
+}
+
+.list-user {
+  width: 80%;
+}
+
+.name-user-logged {
+  font-size: 0.6em;
+  margin-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 95px;
+}
+
+.dot {
+  background-color: rgb(23, 167, 23);
+  border-radius: 50%;
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  padding: 2px;
+}
+
+.content {
+  width: 75%;
+}
+
+.container-chat {
+  align-items: flex-end;
+  background-color: darkgray;
+  border-radius: 1%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 515px;
+  margin: 0;
+  margin-top: 10px;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.container-chat::-webkit-scrollbar-track {
+  background-color: #352e2e;
+  box-shadow: inset 0 0 5px grey;
+}
+
+.container-chat::-webkit-scrollbar {
+  border-radius: 10px;
+  width: 5px;
+}
+
+.container-chat::-webkit-scrollbar-thumb {
+  background: #37691a;
+}
+
+.container-message {
+  background-color: rgb(68, 41, 41);
+  border-radius: 4px;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.6em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 3px 0px;
+  max-height: 500px;
+  width: 100%;
+}
+
+.date-message {
+  background-color: rgb(184, 177, 177);
+  color: rgb(253, 253, 253);
+  padding: 2px;
+  width: 40%;
+}
+
+.name-user {
+  background-color: rgb(218, 210, 210);
+  overflow: hidden;
+  font-size: small;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.content-message {
+  background-color: rgb(220, 228, 233);
+  margin: 2px 0px;
+  padding: 0 2px;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  text-indent: 5%;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.set-message {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-message {
+  font-size: 0.9em;
+  outline: none;
+  resize: none;
+}
